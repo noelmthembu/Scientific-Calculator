@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/fontawesome-webfont3e6e.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --header-height: 3rem;
+    /*========== Colors ==========*/
+    --hue: 174;
+    --sat: 63%;
+    --first-color: hsl(var(--hue), var(--sat), 40%);
+    --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+    --title-color: #fff;
+    --text-color: hsl(var(--hue), 8%, 35%);
+    --body-color: linear-gradient(90deg, hsl(103, 25%, 84%) 0%, hsl(57, 32%, 87%) 100%);
+    --container-color: linear-gradient(136deg, hsl(103, 25%, 84%) 0%, hsl(58, 28%, 35%) 100%);
+    /*========== Font and typography ==========*/
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+body 
+    {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        user-select: none;
+        background: #26434e;
+    }
+    .poppins-font {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .open-sans-font {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    .container 
+    { 
+        margin: 0;
+        margin-top: 38px;
+        box-sizing: content-box;
+        margin-top: 100px;  
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255,255,255,0.06);
+        border: 2px solid rgba(255,255,255,0.06);
+        border-radius: 8px;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+    .content 
+    {
+        width: 100%;
+        margin-top: 1.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .row button 
+    {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+        border: 1px solid rgba(255,255,255,0.06);
+        background: #313638;
+        color: #fff;
+        margin: 5px;
+        border-radius: 10px !important;
+        transition: .1s;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+
+    .row button:hover 
+    {
+        background: #676e70;
+        
+    }
+
+    .display #screen 
+    {
+        margin-bottom: .5em;
+        width: auto;
+        height: 70px;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        text-align: right;
+        padding-right: .5em;
+        background: #698371;
+        border-radius: 6px;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+    textarea{
+        color: #26434e;
+    }
+
+    #eval 
+    {
+        background: #313638;
+        color: #fff;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+
+    #eval:hover 
+    {
+        background: #6d7477;
+    }
+
+    #ac 
+    {
+        background: #9e6f38;
+        color: #fff;
+     
+    }
+    #ac:hover 
+    {
+        background-color: #b89873;
+    }
+
+    #ce 
+    {
+        background: #9e6f38;
+        color: #fff;
+    }
+
+    #ce:hover 
+    {
+        background-color: #b89873;
+    }
+
+    /*================= Heading Css =================*/
+    h2
+
+    {
+        font-size: 40px;
+        position: relative;  
+        bottom: 1em; 
+        margin-left: 1.2em;
+        font-family: sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #d1d9e6,
+                        1px 1px 2px #d1d9e6,
+                        3px 3px 3px #d1d9e6,
+                        4px 4px 4px #d1d9e6,
+                        5px 5px 5px #d1d9e6, 
+                        6px 6px 6px #d1d9e6,
+                        7px 7px 7px #d1d9e6,
+                        8px 8px 8px #d1d9e6;
+                        letter-spacing: 6px;
+    }
+
+    h2 span
+    {
+    color: #33cc33;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px #d1d9e6,
+                    1px 1px 2px #d1d9e6,
+                    3px 3px 3px #d1d9e6,
+                    4px 4px 4px #d1d9e6,
+                    5px 5px 5px #d1d9e6, 
+                    6px 6px 6px #d1d9e6 ;    
+    }
+
+    h2 .fa
+    {
+        position: absolute; 
+        top: 1.5em;
+        color: #33ccff;
+    }
+    .heading{
+        
+            font-size: var(--h2-font-size);
+            color: var(--title-color);
+            text-align: center;
+            margin-bottom: var(--mb-0-75);
+            font-weight: var(--font-medium);
+        
+    }
