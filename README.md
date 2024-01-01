@@ -1,6 +1,6 @@
 # Scientific-Calculator
 ## [Live Preview](https://noelmthembu.github.io/Random-Password-Generator/)
-### Random-Password-Generator
+###  Scientific-Calculator
 - Scientific-Calculator using HTML, CSS & JavaScript.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
